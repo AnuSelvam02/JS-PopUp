@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1.Alert Box
+    <button onclick="alertBox()">String</button>
+    <button onclick="num()">Number</button>
+    <button onclick="strnum()">Str Num</button>
+    <button onclick="bool()">Boolean</button>
+    <button onclick="date()">Date</button>
+
+    <script>
+        
+         /* alert('hello.........good morning')
+         alert(420)
+        alert('age is : ' + 45)
+        alert(Date())
+        let a = 10
+        let b = 20
+        alert(a==b)  */
+        
+        
+        function alertBox(){
+            alert('hello.........good morning')
+        }
+
+        function num(){
+            alert(420)
+        }
+
+        function strnum (){
+            alert('age is : ' + 45)
+        }
+
+        let a = 10
+        let b = 20
+        function bool(){
+            alert(a==b)
+        }
+
+        function date(){
+            alert(Date())
+        }
+       
+    </script> -->
+
+    <!-- 2.Confoirm Box -->
+
+    <!-- <button onclick="he()">Check something</button>
+    <h1 id="disp"></h1>
+
+    <button onclick="data()">Check </button>
+    <h1 id="show"></h1>
+
+    <script>
+        
+        function he() {
+            let msg
+            if (confirm('Is he having a girl frieend!!!!')) {
+                /* alert('Congratulations!!!!!!') */
+                /*  msg = 'congratulations'.fontcolor('green')*/
+                msg = 'congratulations'
+                disp.style.color = 'green'
+            }
+            else {
+                /* alert("Don't loose hopes.....keep trying")*/
+               /* msg = "Don't loose hopes.....keep trying".fontcolor('red') */
+                msg = "Don't loose hopes.....keep trying"
+                disp.style.color = 'red'
+            }
+            document.getElementById('disp').innerHTML = msg
+        }      
+
+
+        function data(){
+            let msg
+            if (confirm('Do you want to save your data!!!!')){
+            msg = 'Your data is saved'.fontcolor('green')
+            }
+            else{
+                msg = 'Your data is not saved!!!'.fontcolor('red') 
+            }
+            document.getElementById('show').innerHTML = msg
+        }
+
+
+    </script> -->
+
+    <!-- 3.Prompt -->
+
+    <button onclick="he()">Check something</button>
+    <h1 id="disp"></h1>
+    <script>
+        function he() {
+            let msg
+            let uName = prompt('Enter your Name', '');
+            if (uName === '' || uName === null) {
+                msg = "You didn't entered any name";
+            }
+            else {
+                msg = `Entered name : ${uName}`;
+            }
+            document.getElementById('disp').innerHTML = msg
+
+        }
+
+
+    </script>
+</body>
+
+</html>
